@@ -1,0 +1,37 @@
+{
+  "name": "lwxlabs-mcp-template-nodejs",
+  "version": "0.1.0",
+  "description": "Reusable Node.js MCP server template",
+  "type": "module",
+  "license": "MIT",
+  "author": "LwXLabs",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "bin": {
+    "lwx-mcp-nodejs": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "test:installed": "node --test tests/*.test.mjs",
+    "create": "node scripts/create.mjs",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "@modelcontextprotocol/node": "2.1.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}

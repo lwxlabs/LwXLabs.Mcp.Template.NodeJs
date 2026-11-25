@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "example-mcp": {
+      "command": "C:\\path\\to\\node.exe",
+      "args": [
+        "C:\\path\\to\\dist\\index.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+artifacts/
+coverage/
+.idea/
+.vscode/
+*.log
+*.tgz
+.env
+.env.*
+!.env.example
